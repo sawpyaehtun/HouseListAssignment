@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EjW-3X-692">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--For You-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ForYouViewController" customModule="HouseListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eX3-J8-Lfw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="72"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rTy-VQ-glc" customClass="SearchView" customModule="HouseListApp" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="24" width="271" height="36"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="Y1R-bV-2UZ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pause" translatesAutoresizingMaskIntoConstraints="NO" id="fV5-Wc-LGZ" customClass="SelectableUIImage" customModule="HouseListApp" customModuleProvider="target">
+                                        <rect key="frame" x="336" y="29.5" width="25" height="25"/>
+                                        <color key="tintColor" name="unSelectedIconColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="2DL-28-1ze"/>
+                                            <constraint firstAttribute="width" constant="25" id="ZPp-20-uNa"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equal" translatesAutoresizingMaskIntoConstraints="NO" id="Udo-CD-JWO" customClass="SelectableUIImage" customModule="HouseListApp" customModuleProvider="target">
+                                        <rect key="frame" x="299" y="29.5" width="25" height="25"/>
+                                        <color key="tintColor" name="unSelectedIconColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Bfh-Ro-hRb"/>
+                                            <constraint firstAttribute="width" constant="25" id="EFZ-kr-6Wf"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filter" translatesAutoresizingMaskIntoConstraints="NO" id="GEj-SU-fLL" customClass="SelectableUIImage" customModule="HouseListApp" customModuleProvider="target">
+                                        <rect key="frame" x="373" y="29.5" width="25" height="25"/>
+                                        <color key="tintColor" name="unSelectedIconColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="0JZ-le-vIC"/>
+                                            <constraint firstAttribute="height" constant="25" id="AsM-k0-dF3"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rTy-VQ-glc" secondAttribute="bottom" constant="12" id="6vt-YX-XYL"/>
+                                    <constraint firstItem="rTy-VQ-glc" firstAttribute="top" secondItem="eX3-J8-Lfw" secondAttribute="top" constant="24" id="77r-R9-rXB"/>
+                                    <constraint firstItem="fV5-Wc-LGZ" firstAttribute="centerY" secondItem="Udo-CD-JWO" secondAttribute="centerY" id="H6C-pg-J2x"/>
+                                    <constraint firstItem="Udo-CD-JWO" firstAttribute="leading" secondItem="rTy-VQ-glc" secondAttribute="trailing" constant="12" id="QKw-9O-RIF"/>
+                                    <constraint firstItem="fV5-Wc-LGZ" firstAttribute="leading" secondItem="Udo-CD-JWO" secondAttribute="trailing" constant="12" id="Vds-tr-pBB"/>
+                                    <constraint firstItem="rTy-VQ-glc" firstAttribute="leading" secondItem="eX3-J8-Lfw" secondAttribute="leading" constant="16" id="hHY-sA-FYm"/>
+                                    <constraint firstItem="Udo-CD-JWO" firstAttribute="centerY" secondItem="rTy-VQ-glc" secondAttribute="centerY" id="hym-Sw-tE1"/>
+                                    <constraint firstItem="GEj-SU-fLL" firstAttribute="leading" secondItem="fV5-Wc-LGZ" secondAttribute="trailing" constant="12" id="lus-AV-dyb"/>
+                                    <constraint firstItem="GEj-SU-fLL" firstAttribute="centerY" secondItem="rTy-VQ-glc" secondAttribute="centerY" id="z3c-Q8-nyw"/>
+                                    <constraint firstAttribute="trailing" secondItem="GEj-SU-fLL" secondAttribute="trailing" constant="16" id="zki-nz-NIY"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIf-mG-aZq" customClass="CategoriesScrollView" customModule="HouseListApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="116" width="414" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Rsw-qN-7ih"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nd7-In-c0p">
+                                <rect key="frame" x="0.0" y="196" width="414" height="617"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="appBackground"/>
+                        <color key="tintColor" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lIf-mG-aZq" firstAttribute="top" secondItem="eX3-J8-Lfw" secondAttribute="bottom" id="2Cu-RI-qVv"/>
+                            <constraint firstItem="Nd7-In-c0p" firstAttribute="top" secondItem="lIf-mG-aZq" secondAttribute="bottom" id="Mok-pf-LWa"/>
+                            <constraint firstItem="Nd7-In-c0p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nvb-is-n2z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Nd7-In-c0p" secondAttribute="bottom" id="Pqg-lA-nuF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nd7-In-c0p" secondAttribute="trailing" id="Q9G-5z-NM4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eX3-J8-Lfw" secondAttribute="trailing" id="aT7-4c-RWN"/>
+                            <constraint firstItem="eX3-J8-Lfw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aem-S2-BJE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lIf-mG-aZq" secondAttribute="trailing" id="uXR-8E-3Xj"/>
+                            <constraint firstItem="lIf-mG-aZq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wS0-9a-T7M"/>
+                            <constraint firstItem="eX3-J8-Lfw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="yPQ-1O-5VS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="For You" image="forYou" selectedImage="forYou" id="YaO-eY-qfp"/>
+                    <connections>
+                        <outlet property="homeListTableView" destination="Nd7-In-c0p" id="TIY-ZN-P2R"/>
+                        <outlet property="imgEqual" destination="Udo-CD-JWO" id="aP9-R6-GT2"/>
+                        <outlet property="imgPause" destination="fV5-Wc-LGZ" id="yar-Sf-8BX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="RcT-1d-b8U">
+            <objects>
+                <viewController id="pPe-Dt-W4m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pXH-JP-BGC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eNZ-LT-Nh4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="NZR-Ai-2wo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ini-WH-VBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="-3161"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="Bpk-nj-MDM">
+            <objects>
+                <viewController id="rMo-Ob-xk4" customClass="ProfileViewController" customModule="HouseListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LSP-fp-sWO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DmO-bD-tNu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="D9a-AN-F0m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPU-o1-IsW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="-2508"/>
+        </scene>
+        <!--Direction-->
+        <scene sceneID="bx4-7i-CTR">
+            <objects>
+                <viewController id="Z3y-Fh-9Im" customClass="DirectionViewController" customModule="HouseListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kF2-a3-kh4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bMt-D4-Mfz"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Direction" image="direction" id="q85-ef-EqA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Op-eX-tzQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="-1854"/>
+        </scene>
+        <!--Favourite-->
+        <scene sceneID="di4-4C-qid">
+            <objects>
+                <viewController id="vHL-Al-wPg" customClass="FavouriteViewController" customModule="HouseListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8PU-0O-5KY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JsY-Lc-YNf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favourite" image="favourite" id="T4Z-2c-BRL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bp9-jU-nzR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="-1203"/>
+        </scene>
+        <!--Near Me-->
+        <scene sceneID="KUm-eX-xFT">
+            <objects>
+                <viewController id="qpL-mu-1Nd" customClass="NearMeViewController" customModule="HouseListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tvk-Pd-lmV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1Fs-e7-Niv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Near Me" image="nearMe" id="fuU-Tk-mfc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mwd-Jv-wwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="-538"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JOQ-If-rud">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EjW-3X-692" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" id="VSi-Id-Bk6">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.89813512559999997" green="0.25171821620000001" blue="0.29886651949999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="mTE-Z3-OUc"/>
+                        <segue destination="qpL-mu-1Nd" kind="relationship" relationship="viewControllers" id="MCn-Au-4oJ"/>
+                        <segue destination="vHL-Al-wPg" kind="relationship" relationship="viewControllers" id="sIX-2L-vQ6"/>
+                        <segue destination="Z3y-Fh-9Im" kind="relationship" relationship="viewControllers" id="pzd-YD-qSs"/>
+                        <segue destination="rMo-Ob-xk4" kind="relationship" relationship="viewControllers" id="6vO-Xd-ovy"/>
+                        <segue destination="pPe-Dt-W4m" kind="relationship" relationship="viewControllers" id="ATg-Kr-Cay"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53i-ay-OE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-275" y="-1510"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="direction" width="25" height="25"/>
+        <image name="equal" width="25" height="25"/>
+        <image name="favourite" width="25" height="25"/>
+        <image name="filter" width="25" height="25"/>
+        <image name="forYou" width="25" height="25"/>
+        <image name="nearMe" width="25" height="25"/>
+        <image name="pause" width="25" height="25"/>
+        <image name="profile" width="25" height="25"/>
+        <namedColor name="appBackground">
+            <color red="0.96078431372549022" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="unSelectedIconColor">
+            <color red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

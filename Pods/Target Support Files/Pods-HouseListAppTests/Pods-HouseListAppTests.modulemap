@@ -1,0 +1,6 @@
+framework module Pods_HouseListAppTests {
+  umbrella header "Pods-HouseListAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

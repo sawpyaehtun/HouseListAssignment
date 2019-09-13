@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchView" customModule="HouseListApp" customModuleProvider="target">
+            <connections>
+                <outlet property="tfSearch" destination="VAz-r1-AnK" id="d1A-Qs-gA3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="168"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ayb-w3-rW0" customClass="CardView" customModule="HouseListApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="90"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="gPm-kM-0By">
+                            <rect key="frame" x="10" y="32.5" width="25" height="25"/>
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="1oR-TM-9XA"/>
+                                <constraint firstAttribute="width" constant="25" id="Hrl-WZ-V7w"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="type here your location address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VAz-r1-AnK">
+                            <rect key="frame" x="45" y="0.0" width="369" height="90"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="VAz-r1-AnK" firstAttribute="top" secondItem="Ayb-w3-rW0" secondAttribute="top" id="1tF-f2-v7y"/>
+                        <constraint firstItem="VAz-r1-AnK" firstAttribute="leading" secondItem="gPm-kM-0By" secondAttribute="trailing" constant="10" id="7lI-rE-Wme"/>
+                        <constraint firstAttribute="bottom" secondItem="VAz-r1-AnK" secondAttribute="bottom" id="M7s-pq-09Q"/>
+                        <constraint firstItem="gPm-kM-0By" firstAttribute="leading" secondItem="Ayb-w3-rW0" secondAttribute="leading" constant="10" id="npY-Bw-dan"/>
+                        <constraint firstItem="gPm-kM-0By" firstAttribute="centerY" secondItem="VAz-r1-AnK" secondAttribute="centerY" id="rT6-vm-5Ng"/>
+                        <constraint firstAttribute="trailing" secondItem="VAz-r1-AnK" secondAttribute="trailing" id="xk3-Ig-GGS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.20000000000000001"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Ayb-w3-rW0" secondAttribute="bottom" id="5y5-sM-ybr"/>
+                <constraint firstItem="Ayb-w3-rW0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="A0R-5g-hNt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ayb-w3-rW0" secondAttribute="trailing" id="LeH-gG-Bhq"/>
+                <constraint firstItem="Ayb-w3-rW0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="zhM-iL-s6a"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-111.16071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search" width="25" height="25"/>
+    </resources>
+</document>
