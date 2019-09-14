@@ -195,7 +195,7 @@
 		D02E8D4D2328E62400B833F4 /* HouseListApp */ = {
 			isa = PBXGroup;
 			children = (
-				D02E8DC8232A405200B833F4 /* baseModel */,
+				D02E8DC8232A405200B833F4 /* base */,
 				D02E8DBB232A0D1000B833F4 /* networkClient */,
 				D02E8DB4232A056600B833F4 /* vos */,
 				D02E8DB1232A04DD00B833F4 /* models */,
@@ -206,8 +206,6 @@
 				D02E8D7F2328E6F400B833F4 /* viewControllers */,
 				D02E8D7D2328E6C600B833F4 /* views */,
 				D02E8D7C2328E6AA00B833F4 /* others */,
-				D02E8DC0232A3A9200B833F4 /* HouseDetailViewController.swift */,
-				D02E8DC1232A3A9200B833F4 /* HouseDetailViewController.xib */,
 			);
 			path = HouseListApp;
 			sourceTree = "<group>";
@@ -244,6 +242,7 @@
 		D02E8D7D2328E6C600B833F4 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				D02E8DC1232A3A9200B833F4 /* HouseDetailViewController.xib */,
 				D02E8D522328E62400B833F4 /* Main.storyboard */,
 			);
 			path = views;
@@ -252,6 +251,7 @@
 		D02E8D7F2328E6F400B833F4 /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D02E8DC0232A3A9200B833F4 /* HouseDetailViewController.swift */,
 				D02E8D502328E62400B833F4 /* ForYouViewController.swift */,
 				D02E8D802328E9AA00B833F4 /* NearMeViewController.swift */,
 				D02E8D822328E9B500B833F4 /* FavouriteViewController.swift */,
@@ -289,9 +289,6 @@
 			children = (
 				D02E8D962329384A00B833F4 /* swifts */,
 				D02E8D9A2329384A00B833F4 /* xibs */,
-				D02E8DA42329390800B833F4 /* CategoriesScrollView.swift */,
-				D02E8DA62329392D00B833F4 /* CategoriesScrollView.xib */,
-				D02E8DC4232A3DF700B833F4 /* SearchView.xib */,
 			);
 			path = customView;
 			sourceTree = "<group>";
@@ -299,6 +296,7 @@
 		D02E8D962329384A00B833F4 /* swifts */ = {
 			isa = PBXGroup;
 			children = (
+				D02E8DA42329390800B833F4 /* CategoriesScrollView.swift */,
 				D02E8D972329384A00B833F4 /* CategoryView.swift */,
 				D02E8DC6232A3E5D00B833F4 /* SearchView.swift */,
 			);
@@ -308,6 +306,8 @@
 		D02E8D9A2329384A00B833F4 /* xibs */ = {
 			isa = PBXGroup;
 			children = (
+				D02E8DC4232A3DF700B833F4 /* SearchView.xib */,
+				D02E8DA62329392D00B833F4 /* CategoriesScrollView.xib */,
 				D02E8D9D2329384A00B833F4 /* CategoryView.xib */,
 			);
 			path = xibs;
@@ -379,13 +379,13 @@
 			path = networkClient;
 			sourceTree = "<group>";
 		};
-		D02E8DC8232A405200B833F4 /* baseModel */ = {
+		D02E8DC8232A405200B833F4 /* base */ = {
 			isa = PBXGroup;
 			children = (
 				D02E8DC9232A409700B833F4 /* BaseModel.swift */,
 				D02E8DCB232A40BE00B833F4 /* BaseViewController.swift */,
 			);
-			path = baseModel;
+			path = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
